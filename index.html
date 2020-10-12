@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #map{
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <title>Worldwide Corona Map</title>
+</head>
+<body>
+    <h1 style="text-align: center; background-color: tomato;font-weight: bold;font-family: cursive;">Statewise-Live Corona Tracker</h1>
+    <div id='map'></div>
+    <div style="display: flex; background-color: gray;">
+    <div class="media" style="padding:1rem;">
+        <img src="red.png" height="70px" width="70px" class="mr-3" alt="...">
+        <div class="media-body"><br>
+          <h5 class="mt-0" style="color: white;">Red Marker</h5>
+          <p>More the intensity of red marker is, higher the Number of Corona Cases.</p>
+        </div>
+      </div>
+
+      <div class="media" style="margin-left: 10rem;padding: 1rem;">
+        <img src="black.png" height="70px" width="70px" class="mr-3" alt="...">
+        <div class="media-body"><br>
+          <h5 class="mt-0" style="color: white;">Black Marker</h5>
+          <p>More the intensity of black marker is, lower the number of Corona Cases.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer style="background-color: black;">
+        <h1 style="color: grey; font-size: 20px;text-align: center;">Developed by Utkarsh Aditya-© 2020</h1>
+    </footer>
+      
+    
+</body>
+
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+
+
+
+
+
+
+
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWRpMTJ1dGthcnNoIiwiYSI6ImNrZjVhOHZyMTAyb2oycXFnMjRnOHkzaW0ifQ.nkC1GBd4pBTRw3UzLupMIQ';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom:2,
+    center:[50,40]
+    });
+
+
+
+
+
+
+
+    
+    </script>
+
+    
+
+<script src="index.js"></script>
+</html>
